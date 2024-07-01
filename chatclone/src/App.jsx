@@ -1,18 +1,14 @@
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
-import AppLayout from "./pages/AppLayout";
-import "./index.css";
-import { TextProvider } from "./contexts/TextContext";
-import { ImageProvider } from "./contexts/ImageContext";
-import { AIProvider } from "./contexts/AIContext";
-import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "react-hot-toast";
-import LoginForm from "./features/authentication/LoginForm";
-import SignupForm from "./features/authentication/SignupForm";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { ProtectedRoute } from "./components/ProtectedRoute";
+import { AIProvider } from "./contexts/AIContext";
+import { ImageProvider } from "./contexts/ImageContext";
+import { TextProvider } from "./contexts/TextContext";
+import "./index.css";
+import AppLayout from "./pages/AppLayout";
 import LoginPage from "./pages/LoginPage";
 import SingupPage from "./pages/SingupPage";
-import { ProtectedRoute } from "./components/ProtectedRoute";
-
-// import { GoogleGenerativeAI } from "https://esm.run/@google/generative-ai";
 
 function App() {
   const queryClient = new QueryClient({
