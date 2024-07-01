@@ -14,8 +14,6 @@ import { ProtectedRoute } from "./components/ProtectedRoute";
 
 // import { GoogleGenerativeAI } from "https://esm.run/@google/generative-ai";
 
-// "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"
-
 function App() {
   const queryClient = new QueryClient({
     defaultOption: {
