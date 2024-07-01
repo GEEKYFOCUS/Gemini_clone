@@ -1,0 +1,24 @@
+.container {
+  /* transform: translate(50% 50%);
+  min-height: 30px; */
+
+  max-width: 1114px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+
+  z-index: 2;
+
+  background-color: linear-gradient(
+    180deg,
+    rgba(var(255, 255, 255), 0) 50px,
+    rgba(var(255, 255, 255), 100) 50px
+  );
+
+  box-shadow: 0 0 10px #ffffffc5;
+  position: fixed;
+  /* bottom: 3rem;
+
+  right: 10rem;
+  left: 19.4rem; */
+}

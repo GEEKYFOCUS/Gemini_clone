@@ -1,0 +1,17 @@
+.feedBack {
+  width: 80%;
+  margin: 0rem auto;
+  margin-top: 2rem;
+  padding: 3rem;
+  max-height: 60vh;
+  /* overflow-y: scroll; */
+
+  display: grid;
+  grid-template-rows: auto 1fr;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+
+  /* align-items: center; */
+  /* background-color: red; */
+}

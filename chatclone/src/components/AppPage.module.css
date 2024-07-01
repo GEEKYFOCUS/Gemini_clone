@@ -1,0 +1,8 @@
+.appPage {
+  height: 100%;
+  flex-basis: 140rem;
+  background-color: var(--color-brand-2);
+  /* padding: 0rem 3.5rem 1rem 2rem; */
+  overflow-y: auto;
+  position: relative;
+}

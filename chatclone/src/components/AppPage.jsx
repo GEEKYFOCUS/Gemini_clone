@@ -1,0 +1,31 @@
+import AppSelect from "./AppSelect";
+import Header from "./Header";
+import ChatContainer from "./ChatContainer";
+import styles from "./AppPage.module.css";
+import { useAI } from "../contexts/AIContext";
+import FeedBack from "./FeedBack";
+import { useText } from "../contexts/TextContext";
+import PreviousItems from "./PreviousItems";
+
+function AppPage() {
+  const { sendMessage, generatedMessage } = useAI();
+  const { initialContent, previousContent, value } = useText();
+  return (
+    <div className={styles.appPage}>
+      <AppSelect />
+
+      {generatedMessage ? (
+        <div className="h-[30%]">
+          <PreviousItems />
+          <FeedBack />
+        </div>
+      ) : (
+        <Header />
+      )}
+
+      <ChatContainer />
+    </div>
+  );
+}
+
+export default AppPage;

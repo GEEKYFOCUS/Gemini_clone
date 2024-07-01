@@ -1,0 +1,16 @@
+textarea {
+  /* width: auto; */
+  height: auto;
+  width: 100%;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  padding: 1.5rem 1rem;
+  /* overflow: visible; */
+
+  /* resize: none; */
+}
+.prompt {
+  flex: 1;
+}

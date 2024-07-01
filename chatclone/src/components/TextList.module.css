@@ -1,0 +1,13 @@
+.textList {
+  width: 70%;
+  margin: 6rem auto 2rem auto;
+  height: 40vh;
+  list-style: none;
+  /* overflow-y: auto;
+  overflow-x: auto; */
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  gap: 1.2rem;
+}

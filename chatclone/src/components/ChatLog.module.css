@@ -1,0 +1,21 @@
+.chat {
+  position: absolute;
+  bottom: 5px;
+  left: 10%;
+  width: 80%;
+  min-height: 2rem;
+  max-height: 20rem;
+  /* min-height: 20px; */
+  margin: 0 auto;
+  padding: 1.4rem 2rem;
+  color: inherit;
+  background-color: var(--color-chat-1);
+  border-radius: 4rem;
+  display: flex;
+}
+.nullImage {
+  flex-direction: row;
+}
+.presentImage {
+  flex-direction: column;
+}

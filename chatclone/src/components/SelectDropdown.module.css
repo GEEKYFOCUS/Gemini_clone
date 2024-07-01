@@ -1,0 +1,33 @@
+.dropDown {
+  width: 29rem;
+  padding: 0.9rem;
+  background-color: #e0e5ec;
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  z-index: 1000;
+  position: fixed;
+  transition: all;
+  top: 6.5rem;
+
+  /* border-radius: 9rem; */
+}
+
+.dropDownCheck {
+  margin-left: auto;
+  font-size: 2rem;
+  transform: translateX(-25px);
+}
+.upgradeBtn {
+  font-size: 1.3rem;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+  color: black;
+  outline: none;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.938);
+  transition: all;
+}
+.upgradeBtn:hover {
+  background-color: #eef0f3;
+}
