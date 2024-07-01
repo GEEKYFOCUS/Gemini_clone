@@ -7,7 +7,7 @@ import { useImage } from "./ImageContext";
 import { MdCurrencyBitcoin } from "react-icons/md";
 const AIContext = createContext();
 
-const API_KEY = `AIzaSyBMTe-erh0FlM13RlMY2gegjWhf_QsM_uo`;
+const API_KEY = process.env.API_KEY;
 const genAI = new GoogleGenerativeAI(API_KEY);
 
 function AIProvider({ children }) {
