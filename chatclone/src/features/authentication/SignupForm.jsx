@@ -128,6 +128,7 @@ function SignupForm() {
         >
           <img
             src="https://authjs.dev/img/providers/google.svg"
+            className="w-4"
             alt="Google logo"
             height="24"
             width="24"

@@ -54,7 +54,7 @@ function LoginForm() {
           Password
         </label>
         <input
-          className="border-2 w-[100%]     border-gray-300 bg-gray-100  px-[0.8rem] py-[1.2rem] shadow-sm rounded-sm "
+          className="border-2 w-[100%]   border-gray-300 bg-gray-100  px-[0.8rem] py-[1.2rem] shadow-sm rounded-sm "
           type="password"
           id="password"
           disabled=""

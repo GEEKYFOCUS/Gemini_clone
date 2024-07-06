@@ -9,11 +9,13 @@ import LoginForm from "../features/authentication/LoginForm";
 //   background-color: var(--color-grey-50);
 function LoginPage() {
   return (
-    <main className="bg-gray-50 max-h-[100dvh] min-h-auto flex justify-center items-center flex-col content-center gap-[3.2rem] ">
+    <main className="bg-red-50 h-screen max-h-[100dvh] min-h-auto flex justify-center items-center flex-col content-center gap-[3.2rem] ">
+      {/* <div> */}
       <h3 className="sm:font-bold font-light text-md sm:text-[2.4rem] font-poppins text-center">
         Login to your account
       </h3>
       <LoginForm />
+      {/* </div> */}
     </main>
   );
 }
