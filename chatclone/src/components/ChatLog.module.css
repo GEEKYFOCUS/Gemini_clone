@@ -12,6 +12,7 @@
   background-color: var(--color-chat-1);
   border-radius: 4rem;
   display: flex;
+  align-items: center !important;
 }
 .nullImage {
   flex-direction: row;

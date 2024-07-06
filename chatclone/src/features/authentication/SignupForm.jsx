@@ -1,13 +1,20 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
-import { signup } from "../../services/apiAuth";
+import { signup, useGoogle } from "../../services/apiAuth";
 import useSignup from "./useSignup";
+import useLoginWithGoogle from "./useLoginWithGoogle";
 
 function SignupForm() {
   const { register, getValues, formState, reset, handleSubmit } = useForm();
   const { errors } = formState;
   const { signup, isLoading } = useSignup();
+  // const { data, error } = useGoogle();
+  const { signupWithGoogle } = useLoginWithGoogle();
+
+  function LoginWithGoogle() {
+    signupWithGoogle();
+  }
   function onSubmit(data) {
     const { fullName, email, password } = data;
     signup(
@@ -113,6 +120,19 @@ function SignupForm() {
           disabled={isLoading}
         >
           Sign Up
+        </button>
+        <button
+          className="bg-gray-500 mt-12 text-white text-sm font-semibold active:text-gray-600 visited:text-gray-600 flex justify-center items-center gap-x-4 hover:bg-gray-400 hover:text-[#fff] w-auto sm:w-full  py-[1rem] px-[2.4rem] rounded-md"
+          type="submit"
+          onClick={() => LoginWithGoogle()}
+        >
+          <img
+            src="https://authjs.dev/img/providers/google.svg"
+            alt="Google logo"
+            height="24"
+            width="24"
+          />
+          <span>Login with google</span>
         </button>
       </div>
     </form>

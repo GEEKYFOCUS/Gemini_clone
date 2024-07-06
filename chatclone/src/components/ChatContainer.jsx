@@ -18,7 +18,7 @@ function ChatContainer() {
   // width: 100%;
   return (
     <div
-      className={`  bg-white   text-center bottom-[2.5rem] md:left-[4rem] md:right-[5rem] md:bottom-[3rem] lg:right-[10rem] xl:left-[19.4rem] fixed  ${styles.container}`}
+      className={`    text-center bottom-[2.5rem] md:left-[4rem] md:right-[5rem] md:bottom-[3rem] lg:right-[10rem] xl:left-[19.4rem] fixed  ${styles.container}`}
     >
       <ChatLog />
       <Footer />

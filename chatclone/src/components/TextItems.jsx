@@ -20,14 +20,14 @@ function TextItems({ id, content, text, icon }) {
   //     activeContent(id);
   //   }
   return (
-    <li>
+    <li className="w-full">
       <Link
         key={text}
-        className={
+        className={`${
           currentContent === id && isActive
             ? `${styles.textItem} ${styles.textActive}`
             : `${styles.textItem}`
-        }
+        } `}
         onClick={() => {
           activeContent(id);
           handleClick();

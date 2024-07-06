@@ -8,7 +8,7 @@ function SelectDropdown() {
       {/* <button className={styles.dropDownBtn}></button> */}
       <Button>
         <svg
-          className="opacity-80"
+          className="opacity-80 w-[2rem] sm:w-auto"
           xmlns="http://www.w3.org/2000/svg"
           width="28"
           height="28"
@@ -34,18 +34,22 @@ function SelectDropdown() {
             </radialGradient>
           </defs>
         </svg>
-        <span className="font-semibold">Gemini</span>
+        <span className="font-semibold text-md sm:text-lg md:text-base">
+          Gemini
+        </span>
         <FaRegCheckCircle className={styles.dropDownCheck} />
       </Button>
       <Button type={"userSelect"}>
         <span>
           <img
-            className="opacity-50"
+            className="opacity-50 "
             src="https://www.gstatic.com/lamda/images/gemini_sparkle_v002_advanced_1743d7b7a7bc01f38e6f4.svg"
             alt="gemini_logo"
           />
         </span>
-        <span className="text-[1.1rem] font-semibold">Gemini Advanced</span>
+        <span className="sm:text-[1.1rem] text-[1rem] font-bold sm:font-semibold">
+          Gemini Advanced
+        </span>
         <div role="button" className={styles.upgradeBtn}>
           Upgrade
         </div>

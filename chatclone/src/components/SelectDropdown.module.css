@@ -31,3 +31,17 @@
 .upgradeBtn:hover {
   background-color: #eef0f3;
 }
+
+@media (max-width: 640px) {
+  .dropDown {
+    width: 20rem;
+  }
+  .dropDownCheck {
+    font-size: 1.5rem;
+  }
+  .upgradeBtn {
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 0.2rem 0.6rem;
+  }
+}

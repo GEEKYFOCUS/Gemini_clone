@@ -81,7 +81,7 @@ function UploaderFilePreviewer() {
   // display: flex;
   // justify-content: space-between;
   return (
-    <div className={`flex gap-x-2  md:justify-between ${styles.uploadWrap}`}>
+    <div className={`flex gap-x-2    md:justify-between ${styles.uploadWrap}`}>
       {imageUrl && (
         <div className="relative">
           {/* <button
@@ -110,15 +110,15 @@ function UploaderFilePreviewer() {
       font-size: 2.5rem; display: flex; /* gap: 1rem 1.5rem;  justify-content:
       space-evenly; cursor: pointer; */}
       <div
-        className={` flex  sm:justify-evenly w-[12rem] sm:w-[16rem] md:w-[18rem] text-xl sm:text-2xl md:text-3xl xl:text-4xl  ${
+        className={` flex   sm:justify-evenly w-[12rem] sm:w-[16rem] md:w-[18rem] text-xl sm:text-2xl md:text-3xl xl:text-4xl  ${
           styles.uploads
         } ${text ? styles.textIsActive : styles.textInActive}`}
       >
         <div
-          className={` px-2 py-[.1px]  sm:p-8   ${styles.uploadActive} rounded-full`}
+          className={` px-1 py-[.1px]  sm:p-8   ${styles.uploadActive} rounded-full`}
         >
           <label htmlFor="imageInput" className="cursor-pointer ">
-            <CiImageOn className="pointer-events-none  text-xl sm:text-2xl md:text-3xl xl:text-4xl " />
+            <CiImageOn className="pointer-events-none  text-2xl sm:text-2xl md:text-3xl xl:text-4xl " />
           </label>
           <input
             type="file"
@@ -129,23 +129,27 @@ function UploaderFilePreviewer() {
           />
         </div>
         <div
-          className={` px-2 py-[.8px]  sm:p-8    ${styles.uploadActive} rounded-full`}
+          className={` px-1 py-[.8px]  sm:p-8     ${styles.uploadActive} rounded-full`}
         >
           <input type="hidden" name="audio" value="data:audio/mp3" />
           <PiMicrophone
             title="mic"
             id="recordButton"
             onCanPlay={() => handleRecord}
-            className={""}
+            className={
+              "pointer-events-none  text-2xl sm:text-2xl md:text-3xl xl:text-4xl"
+            }
           />
         </div>
         <div
-          className={` px-2 py-[.8px]  sm:p-8 ${
+          className={` px-1 py-[.8px]  sm:p-8 ${
             text ? styles.uploadActive : ""
           } transition-all ease-in-out rounded-full`}
         >
           <VscSend
-            className={`  ${text ? styles.showSendBtn : styles.hideSendBtn}`}
+            className={`  ${
+              text ? styles.showSendBtn : styles.hideSendBtn
+            } pointer-events-none  text-2xl sm:text-2xl md:text-3xl xl:text-4xl  `}
             onClick={() => {
               setSentMessage(true);
               setCurrentText(text);

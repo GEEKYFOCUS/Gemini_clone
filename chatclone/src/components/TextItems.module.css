@@ -65,16 +65,22 @@ p {
   justify-content: center;
 }
 
-@media (max-width: 640px) {
-  display: flex;
-  font-size: 1.5rem;
-  flex-direction: column;
-  /* gap: 1.6rem; */
-  justify-content: space-between;
+@media screen and (max-width: 640px) {
+  .textItem {
+    display: flex;
+    font-size: 1.5rem;
+    flex-direction: column;
+    width: 100%;
+    /* gap: 1.6rem; */
+    justify-content: space-between;
 
-  align-items: center;
+    align-items: center;
 
-  background-color: var(--color-ash-1);
-  border-radius: 10px;
-  padding: 1rem 2rem;
+    background-color: var(--color-ash-1);
+    border-radius: 10px;
+    padding: 1rem 2rem;
+  }
+  .icon {
+    height: 3rem;
+  }
 }

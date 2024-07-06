@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <div className=" bg-white flex md:justify-center justify-start    sm:items-baseline translate-y-12">
+    <div className=" bg-white ml-6 flex md:justify-center justify-start    sm:items-baseline translate-y-12">
       <span className="  text-xs md:text-sm lg:text-md lg:text-lg font-extrabold">
         Gemini may display inaccurate info, including about people, so
         double-check its responses.

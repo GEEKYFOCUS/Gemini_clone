@@ -12,7 +12,7 @@ function ChatLog() {
     <div
       className={`
 
-        px-6 py-4 h-[4rem] sm:h-[6rem]  mb-[1rem] sm:mb-[0]
+        px-6 py-4 h-[5rem] sm:h-[6rem]  mb-[1rem] sm:mb-[0]
       ${
         imageUrl
           ? `${styles.chat} ${styles.presentImage}`

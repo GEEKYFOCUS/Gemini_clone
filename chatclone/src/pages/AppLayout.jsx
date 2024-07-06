@@ -8,8 +8,8 @@ function AppLayout() {
   // className={`${styles.app} grid grid-cols-[auto_1fr]
   return (
     <div
-      className={`${styles.app} grid grid-cols-[auto]
-          lg:flex`}
+      className={`${styles.app} grid grid-cols-[1fr]
+          lg:grid-cols-[auto_1fr]`}
     >
       <Sidebar />
       <AppPage />

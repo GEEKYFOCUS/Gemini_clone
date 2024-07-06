@@ -9,10 +9,10 @@ function Prompt() {
   console.log(text);
   // padding: 1.5rem 1rem;
   return (
-    <div className={`  ${styles.prompt}`}>
+    <div className={`   ${styles.prompt} mt-12 flex-1`}>
       <textarea
         name="text-area"
-        className=" text-sm sm:text-lg md:text-xl placeholder:text-sm placeholder:md:text-xl overflow-hidden md:overflow-y-auto "
+        className=" text-[1.3rem] sm:text-lg py-4 md:text-xl placeholder:text-[1rem]  placeholder:font-bold placeholder:md:text-xl overflow-hidden md:overflow-y-auto "
         id="text"
         cols=""
         rows=""
