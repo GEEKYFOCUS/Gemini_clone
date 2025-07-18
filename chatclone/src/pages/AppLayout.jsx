@@ -1,7 +1,7 @@
-import Sidebar from "../components/Sidebar";
 import AppPage from "../components/AppPage";
-import styles from "./AppLayout.module.css";
+import Sidebar from "../components/Sidebar";
 import { useText } from "../contexts/TextContext";
+import styles from "./AppLayout.module.css";
 function AppLayout() {
   const { isOpen } = useText();
   // ${isOpen ? "grid grid-cols-[20rem_1fr]" : "grid grid-cols-[1fr]"}

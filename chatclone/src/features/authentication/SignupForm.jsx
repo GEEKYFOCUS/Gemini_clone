@@ -1,9 +1,6 @@
-import { useState } from "react";
 import { useForm } from "react-hook-form";
-import toast from "react-hot-toast";
-import { signup, useGoogle } from "../../services/apiAuth";
-import useSignup from "./useSignup";
 import useLoginWithGoogle from "./useLoginWithGoogle";
+import useSignup from "./useSignup";
 
 function SignupForm() {
   const { register, getValues, formState, reset, handleSubmit } = useForm();

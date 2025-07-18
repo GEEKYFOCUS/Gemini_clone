@@ -91,7 +91,7 @@ label {
   }
 } */
 
-/* styles.css */
+/* styles.css
 .markdown-container {
   font-family: "Poppins", sans-serif;
   line-height: 1.6;
@@ -140,4 +140,58 @@ label {
   padding-left: 10px;
   color: #666;
   margin-left: 0;
+}
+
+
+
+
+.markdown-content pre {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+.markdown-content code {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.9em;
+} */
+
+
+
+.markdown-content {
+  display: block; /* Ensure block layout */
+  width: 100%; /* Full width for single column */
+  margin-bottom: 1.5rem; /* Space between userMessage and feedback */
+}
+
+.markdown-content p {
+  margin: 0.5rem 0; /* Space between paragraphs */
+  line-height: 1.6; /* Readability */
+}
+
+.markdown-content h1,
+.markdown-content h2,
+.markdown-content h3 {
+  margin: 1rem 0 0.5rem; /* Space for headings */
+}
+
+.markdown-content ul,
+.markdown-content ol {
+  margin: 0.5rem 0; /* Space for lists */
+  padding-left: 1.5rem; /* Indent lists */
+}
+
+.markdown-content pre {
+  background-color: #2d2d2d; /* Dark background for Prism okaidia */
+  color: #f8f8f2; /* Text color */
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto; /* Horizontal scroll for long code */
+  margin: 0.5rem 0; /* Space between code blocks */
+  font-size: 0.9em;
+}
+
+.markdown-content code {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.9em;
 }

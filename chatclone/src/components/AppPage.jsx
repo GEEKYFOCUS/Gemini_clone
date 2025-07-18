@@ -1,10 +1,10 @@
-import AppSelect from "./AppSelect";
-import Header from "./Header";
-import ChatContainer from "./ChatContainer";
-import styles from "./AppPage.module.css";
 import { useAI } from "../contexts/AIContext";
-import FeedBack from "./FeedBack";
 import { useText } from "../contexts/TextContext";
+import styles from "./AppPage.module.css";
+import AppSelect from "./AppSelect";
+import ChatContainer from "./ChatContainer";
+import FeedBack from "./FeedBack";
+import Header from "./Header";
 import PreviousItems from "./PreviousItems";
 
 function AppPage() {

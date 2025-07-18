@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 
+import { useState } from "react";
 import { useText } from "../contexts/TextContext";
 import styles from "./TextItems.module.css";
-import { useState } from "react";
 
 function TextItems({ id, content, text, icon }) {
   //   console.log(id);
